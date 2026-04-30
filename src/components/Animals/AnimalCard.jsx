@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AnimalCard = ({ animal }) => {
-    console.log(animal);
     return (
-        <div className="grid lg:grid-cols-2 border border-gray-300 rounded-md">
-            <div className="bg-gray-50 p-10">
+        <div className="grid lg:grid-cols-2 border border-purple-400 rounded-md">
+            <div className="bg-gray-50 xl:p-10">
                 <Image
                     src={animal.image}
                     width={300}
@@ -15,7 +14,7 @@ const AnimalCard = ({ animal }) => {
                 ></Image>
             </div>
             <div className="p-10 relative">
-                <p className="bg-amber-100 border border-amber-300 font-semibold absolute right-0 top-2 px-4 py-1 text-right rounded-l-2xl text-sm">
+                <p className="bg-purple-200 border border-purple-400 font-semibold absolute right-0 top-2 px-4 py-1 text-right rounded-l-2xl text-sm">
                     {animal?.breed}
                 </p>
                 <h1 className="text-xl font-bold">{animal.name}</h1>

@@ -7,7 +7,7 @@ const NavLinks = ({nav}) => {
     const pathname = usePathname();
 
     return (
-        <li className={`${pathname === nav.path ? "border-b-2 border-red-500" : "hover:text-red-500"}`}>
+        <li className={`${pathname === nav.path ? "border-b-2 border-purple-400" : "hover:text-purple-400"}`}>
             <Link href={nav.path} className="hover:bg-transparent">{nav.name}</Link>
         </li>
     );

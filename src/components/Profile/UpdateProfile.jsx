@@ -1,12 +1,16 @@
 "use client"
 
 import { authClient } from "@/lib/auth-client";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const UpdateProfile = () => {
-    const openModal = () => {
-        document.getElementById('update_profile_modal').showModal()
-    }
+    const modalRef = useRef(null);
+
+    const openModal = () => modalRef.current?.showModal();
+    const closeModal = () => modalRef.current?.close();
+
     const {
         register,
         handleSubmit,
@@ -15,10 +19,13 @@ const UpdateProfile = () => {
 
     const handleUpdateProfile = async (data) => {
         await authClient.updateUser(data);
+
+        toast.success("Profile updated successfully");
+        closeModal()
     }
     return (
         <>
-            <dialog id="update_profile_modal" className="modal modal-bottom sm:modal-middle">
+            <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <div className="modal-action">
                         <form method="dialog">
