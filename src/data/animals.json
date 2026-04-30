@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Deshi Shahi Cow",
+        "type": "Cow",
+        "breed": "Local Deshi",
+        "price": 120000,
+        "weight": 280,
+        "age": 3,
+        "location": "Bogura",
+        "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+        "image": "https://source.unsplash.com/600x400/?cow",
+        "category": "Large Animal"
+    },
+    {
+        "id": 2,
+        "name": "Australian Cross Bull",
+        "type": "Cow",
+        "breed": "Australian Cross",
+        "price": 180000,
+        "weight": 350,
+        "age": 4,
+        "location": "Dhaka",
+        "description": "Strong and বড় সাইজের bull. ভালোভাবে খামারে লালন-পালন করা হয়েছে.",
+        "image": "https://source.unsplash.com/600x400/?bull",
+        "category": "Large Animal"
+    },
+    {
+        "id": 3,
+        "name": "Black Bengal Goat",
+        "type": "Goat",
+        "breed": "Black Bengal",
+        "price": 18000,
+        "weight": 25,
+        "age": 2,
+        "location": "Rajshahi",
+        "description": "Popular Black Bengal goat. Tender meat and ideal for small Qurbani.",
+        "image": "https://source.unsplash.com/600x400/?goat",
+        "category": "Small Animal"
+    },
+    {
+        "id": 4,
+        "name": "Jamunapari Goat",
+        "type": "Goat",
+        "breed": "Jamunapari",
+        "price": 35000,
+        "weight": 40,
+        "age": 3,
+        "location": "Natore",
+        "description": "Tall and সুন্দর Jamunapari goat. ভালো মানের মাংস এবং সুস্থ.",
+        "image": "https://source.unsplash.com/600x400/?goat,white",
+        "category": "Small Animal"
+    },
+    {
+        "id": 5,
+        "name": "Deshi Sheep",
+        "type": "Sheep",
+        "breed": "Local",
+        "price": 22000,
+        "weight": 30,
+        "age": 2,
+        "location": "Pabna",
+        "description": "Healthy sheep raised in গ্রামের পরিবেশ. Suitable for Qurbani.",
+        "image": "https://source.unsplash.com/600x400/?sheep",
+        "category": "Small Animal"
+    },
+    {
+        "id": 6,
+        "name": "Sahiwal Cow",
+        "type": "Cow",
+        "breed": "Sahiwal",
+        "price": 200000,
+        "weight": 400,
+        "age": 5,
+        "location": "Sirajganj",
+        "description": "Premium Sahiwal cow with excellent health and weight. Perfect for large Qurbani.",
+        "image": "https://source.unsplash.com/600x400/?cattle",
+        "category": "Large Animal"
+    }
+]
