@@ -16,6 +16,10 @@ const Navbar = () => {
         {
             path: "/animals",
             name: "All Animals"
+        },
+        {
+            path: "/my-profile",
+            name: "My Profile"
         }
     ];
 
@@ -33,9 +37,6 @@ const Navbar = () => {
                             {
                                 allNavLinks.map((nav, index) => <NavLinks key={index} nav={nav} />)
                             }
-                            {
-                                session?.user && <NavLinks nav={{ path: "my-profile", name: "My Profile" }} />
-                            }
                         </ul>
                     </div>
                     <Link href={"/"} className="font-bold text-2xl text-neutral">QurbaniHat</Link>
@@ -44,9 +45,6 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 gap-2">
                         {
                             allNavLinks.map((nav, index) => <NavLinks key={index} nav={nav} />)
-                        }
-                        {
-                            session?.user && <NavLinks nav={{ path: "my-profile", name: "My Profile" }} />
                         }
                     </ul>
                 </div>
