@@ -20,9 +20,7 @@ const Banner = () => {
                 ></Image>
             </div>
             <div className="mt-5">
-                <button className="btn btn-sm btn-neutral btn-outline">
-                    <Link href={"/animals"}>View All Animals</Link>
-                </button>
+                <Link href={"/animals"} className="btn btn-sm btn-neutral btn-outline">View All Animals</Link>
             </div>
         </div>
     );
