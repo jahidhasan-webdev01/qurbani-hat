@@ -8,8 +8,6 @@ import Image from "next/image";
 const Navbar = () => {
     const { data: session, isPending } = authClient.useSession()
 
-    console.log("session", session);
-
     return (
         <div className="border-b border-gray-200 pt-10 pb-2">
             <div className="container mx-auto navbar">
@@ -40,10 +38,10 @@ const Navbar = () => {
                             session?.user
                                 ?
                                 <>
-                                    <Image src={session?.user?.image} width={50} height={50} alt={session?.user.name}></Image>
+                                    <Image src={session?.user?.image} width={30} height={30} alt={session?.user.name} className="rounded-full"></Image>
                                     <button
                                         onClick={async () => await authClient.signOut()}
-                                        className="btn btn-sm btn-error text-white">Logout</button>
+                                        className="pl-2 btn btn-sm btn-error text-white">Logout</button>
                                 </> :
                                 <>
                                     <Link href={"/login"}>

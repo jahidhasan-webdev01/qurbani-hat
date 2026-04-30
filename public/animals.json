@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Deshi Shahi Cow",
+        "type": "Cow",
+        "breed": "Local Deshi",
+        "price": 120000,
+        "weight": 280,
+        "age": 3,
+        "location": "Bogura",
+        "description": "This Deshi Shahi cow has been carefully raised in a natural and hygienic farm environment, ensuring excellent overall health and condition. It has been fed a balanced diet consisting of fresh grass, straw, and nutrient-rich supplements to support steady growth and maintain optimal body weight. The cow is active, well-behaved, and free from any known diseases, with regular veterinary checkups conducted to ensure its well-being. Its strong body structure and healthy physique make it highly suitable for Qurbani purposes. The animal has been nurtured with proper care, shelter, and cleanliness to promote healthy development. Its meat quality is expected to be tender and flavorful due to its healthy upbringing. This cow is an excellent choice for buyers seeking a reliable and well-maintained animal.",
+        "image": "https://png.pngtree.com/png-vector/20241229/ourmid/pngtree-cow-photography-png-image_14938718.png",
+        "category": "Large Animal"
+    },
+    {
+        "id": 2,
+        "name": "Australian Cross Bull",
+        "type": "Cow",
+        "breed": "Australian Cross",
+        "price": 180000,
+        "weight": 350,
+        "age": 4,
+        "location": "Dhaka",
+        "description": "This Australian Cross bull is a large and powerful animal raised in a well-managed farm under professional supervision. It has been provided with a high-quality diet, including green fodder, grains, and nutritional supplements to ensure proper muscle development and weight gain. The bull has an impressive body structure, strong legs, and a well-built frame, making it ideal for buyers looking for a premium Qurbani animal. Regular health monitoring and vaccinations have been maintained to ensure that the animal remains disease-free and in excellent condition. The bull is calm in temperament and easy to manage. Its size and appearance make it visually appealing, while its healthy upbringing contributes to high-quality meat production. This animal is a perfect option for those seeking a strong and high-value livestock investment.",
+        "image": "https://file.aiquickdraw.com/imgcompressed/img/compressed_7023e7e7c8b610688b00d3376f93b174.webp",
+        "category": "Large Animal"
+    },
+    {
+        "id": 3,
+        "name": "Black Bengal Goat",
+        "type": "Goat",
+        "breed": "Black Bengal",
+        "price": 18000,
+        "weight": 25,
+        "age": 2,
+        "location": "Rajshahi",
+        "description": "This Black Bengal goat is a popular and highly valued breed known for its excellent meat quality and adaptability. It has been raised in a clean and natural rural environment, where it has received proper care and feeding. The goat has been fed a combination of natural grasses, leaves, and supplementary feed to ensure balanced nutrition and healthy growth. It is active, alert, and free from diseases, with regular health monitoring carried out by experienced handlers. The compact size of the goat makes it suitable for small-scale Qurbani or household use. Its meat is known for being tender and flavorful. The goat has been maintained with proper hygiene and shelter to ensure comfort and safety. This is an excellent option for buyers looking for an affordable and healthy animal.",
+        "image": "https://png.pngtree.com/png-vector/20250530/ourmid/pngtree-black-goat-png-image_16423794.png",
+        "category": "Small Animal"
+    },
+    {
+        "id": 4,
+        "name": "Jamunapari Goat",
+        "type": "Goat",
+        "breed": "Jamunapari",
+        "price": 35000,
+        "weight": 40,
+        "age": 3,
+        "location": "Natore",
+        "description": "This Jamunapari goat is a tall and attractive breed known for its elegant appearance and high-quality meat production. It has been raised in a well-maintained farm environment with proper feeding and care to ensure optimal health and growth. The goat has been provided with a balanced diet consisting of green fodder, grains, and essential nutrients. It is healthy, active, and free from diseases, with regular veterinary supervision to ensure its well-being. Its long body structure and clean coat make it visually appealing and a premium choice for Qurbani. Its meat quality is expected to be tender and rich due to its healthy upbringing. This animal is ideal for buyers who are looking for a high-quality goat that stands out both in appearance and performance.",
+        "image": "https://png.pngtree.com/png-clipart/20240830/original/pngtree-oberhasli-goat-png-image_15883761.png",
+        "category": "Small Animal"
+    },
+    {
+        "id": 5,
+        "name": "Deshi Sheep",
+        "type": "Sheep",
+        "breed": "Local",
+        "price": 22000,
+        "weight": 30,
+        "age": 2,
+        "location": "Pabna",
+        "description": "This Deshi sheep has been raised in a traditional rural setting with natural feeding and attentive care. It has been provided with a diet of fresh grass and locally available nutritious feed to support healthy growth and maintain good body condition. The sheep is active, healthy, and free from diseases, with proper hygiene and shelter maintained throughout its upbringing. Regular monitoring has ensured that the animal remains in excellent condition and suitable for Qurbani. Its medium body size makes it a practical choice for families or individuals looking for a manageable and affordable livestock option. The meat quality is expected to be good and satisfying. This sheep represents a reliable and well-cared-for option for buyers seeking a healthy animal.",
+        "image": "https://png.pngtree.com/png-clipart/20250516/original/pngtree-flat-sheep-icon-png-image_21012836.png",
+        "category": "Small Animal"
+    },
+    {
+        "id": 6,
+        "name": "Sahiwal Cow",
+        "type": "Cow",
+        "breed": "Sahiwal",
+        "price": 200000,
+        "weight": 400,
+        "age": 5,
+        "location": "Sirajganj",
+        "description": "This Sahiwal cow is a premium breed known for its excellent health, strong body structure, and high meat quality. It has been raised in a controlled farm environment with professional care and proper nutrition. The cow has been fed a balanced diet that includes high-quality fodder, grains, and supplements to ensure optimal growth and maintain its impressive weight. It is healthy and free from diseases, with regular veterinary checkups conducted to ensure its well-being. The cow’s large size and clean appearance make it a top choice for large-scale Qurbani. Its meat is expected to be tender and of superior quality due to its healthy upbringing. This animal is ideal for buyers looking for a high-value and premium livestock option.",
+        "image": "https://png.pngtree.com/png-clipart/20241217/original/pngtree-a-picture-of-big-bull-cow-png-image_17953879.png",
+        "category": "Large Animal"
+    }
+]

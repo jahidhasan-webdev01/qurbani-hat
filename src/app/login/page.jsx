@@ -29,6 +29,14 @@ const LoginPage = () => {
         }
     }
 
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+
+        console.log("DATA", data);
+    };
+
     return (
         <div className="h-[90vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
             <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md">
@@ -80,7 +88,13 @@ const LoginPage = () => {
 
                         <div className="divider">OR</div>
                     </form>
-                    <button className="w-full btn btn-primary"><FaGoogle /> Login with Google</button>
+                    <button
+                        onClick={handleGoogleSignIn}
+                        className="w-full btn btn-primary"
+                    >
+                        <FaGoogle />
+                        Login with Google
+                    </button>
                 </div>
             </div>
         </div>
