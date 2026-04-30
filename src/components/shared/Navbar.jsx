@@ -6,7 +6,18 @@ import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 
 const Navbar = () => {
-    const { data: session, isPending } = authClient.useSession()
+    const { data: session, isPending } = authClient.useSession();
+
+    const allNavLinks = [
+        {
+            path: "/",
+            name: "Home"
+        },
+        {
+            path: "/animals",
+            name: "All Animals"
+        }
+    ];
 
     return (
         <div className="border-b border-gray-200 pt-10 pb-2">
@@ -19,14 +30,24 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <NavLinks />
+                            {
+                                allNavLinks.map((nav, index) => <NavLinks key={index} nav={nav} />)
+                            }
+                            {
+                                session?.user && <NavLinks nav={{ path: "my-profile", name: "My Profile" }} />
+                            }
                         </ul>
                     </div>
                     <Link href={"/"} className="font-bold text-2xl text-neutral">QurbaniHat</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-2">
-                        <NavLinks />
+                        {
+                            allNavLinks.map((nav, index) => <NavLinks key={index} nav={nav} />)
+                        }
+                        {
+                            session?.user && <NavLinks nav={{ path: "my-profile", name: "My Profile" }} />
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end gap-2">
