@@ -17,10 +17,7 @@ const LoginPage = () => {
     } = useForm()
 
     const handleLogin = async (data) => {
-        const { data: response, error } = await authClient.signIn.email({
-            email: data.email,
-            password: data.password,
-        })
+        const { data: response, error } = await authClient.signIn.email(data)
 
         if (error) {
             toast.error(`${error.message}`)
