@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 
 const RegisterPage = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -29,6 +29,17 @@ const RegisterPage = () => {
             redirect("/login")
         }
     }
+
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+
+        if (data) {
+            toast.success("Login successfull.")
+            redirect("/")
+        }
+    };
 
     return (
         <div className="h-[90vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
@@ -110,7 +121,16 @@ const RegisterPage = () => {
                         <p className="text-center mt-2 font-bold">
                             Already have an account?
                             <Link href={"/login"} className="text-red-500"> Login</Link></p>
+
+                        <div className="divider">OR</div>
                     </form>
+                    <button
+                        onClick={handleGoogleSignIn}
+                        className="w-full btn btn-primary"
+                    >
+                        <FaGoogle />
+                        Login with Google
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,44 +1,44 @@
 "use client"
 
 import { authClient } from "@/lib/auth-client";
-import { useRef } from "react";
+import { redirect } from "next/navigation";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
-const UpdateProfile = () => {
-    const modalRef = useRef(null);
-
-    const openModal = () => modalRef.current?.showModal();
-    const closeModal = () => modalRef.current?.close();
+const UpdateProfilePage = () => {
+    const { data: session } = authClient.useSession();
 
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm()
 
     const handleUpdateProfile = async (data) => {
-        await authClient.updateUser(data);
 
+        if (data.name === session.user.name && data.image === session.user.image) {
+            return toast.error("No change detacted!");
+        }
+
+        await authClient.updateUser(data);
+        reset();
         toast.success("Profile updated successfully");
-        closeModal()
+        redirect("/my-profile")
     }
+
     return (
-        <>
-            <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box">
-                    <div className="modal-action">
-                        <form method="dialog">
-                            <button className="btn btn-sm text-red-500 font-bold">X</button>
-                        </form>
-                    </div>
-                     <h1 className="font-bold text-xl">Update your profile</h1>
-                    <form className="fieldset mt-2" onSubmit={handleSubmit(handleUpdateProfile)}>
+        <div className="h-[90vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
+            <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md">
+                <h1 className="text-center font-bold text-2xl">Update your profile</h1>
+                <div className="card-body mt-5">
+                    <form className="fieldset" onSubmit={handleSubmit(handleUpdateProfile)}>
                         <label className="label font-bold">Name</label>
                         <input
                             type="text"
                             className="input w-full bg-gray-100"
                             placeholder="Enter your full name"
+                            defaultValue={session?.user.name}
                             {...register("name", {
                                 required: "Name is required",
                                 minLength: {
@@ -54,6 +54,7 @@ const UpdateProfile = () => {
                             type="text"
                             className="input w-full bg-gray-100"
                             placeholder="Add a valid image url"
+                            defaultValue={session?.user.image}
                             {...register("image", {
                                 required: "Image URL is required",
                                 pattern: {
@@ -65,17 +66,12 @@ const UpdateProfile = () => {
 
                         <p className="text-red-500">{errors?.image?.message}</p>
 
-                        <button className="btn btn-neutral mt-4">Update</button>
+                        <button className="btn btn-neutral mt-4">Confirm Update</button>
                     </form>
-
                 </div>
-            </dialog>
-
-            <div className="text-center mt-5">
-                <button onClick={openModal} className="btn btn-info text-white btn-sm">Update Profile</button>
             </div>
-        </>
+        </div>
     );
 };
 
-export default UpdateProfile;
+export default UpdateProfilePage;

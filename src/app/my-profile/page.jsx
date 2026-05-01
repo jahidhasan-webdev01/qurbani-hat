@@ -1,7 +1,7 @@
-import UpdateProfile from "@/components/Profile/UpdateProfile";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Image from "next/image";
+import Link from "next/link";
 
 const MyProfilePage = async () => {
     const session = await auth.api.getSession({
@@ -30,7 +30,8 @@ const MyProfilePage = async () => {
                     <h1 className="text-gray-600">Email: {user?.email}</h1>
                 </div>
 
-                <UpdateProfile />
+                <Link href={"/my-profile/update"} className="btn btn-info text-white btn-sm text-center mt-5">Update Profile</Link>
+
             </div>
         </div>
     );

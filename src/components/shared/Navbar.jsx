@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavLinks from "./NavLinks";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 const Navbar = () => {
     const { data: session, isPending } = authClient.useSession();
@@ -22,6 +23,11 @@ const Navbar = () => {
             name: "My Profile"
         }
     ];
+
+    const handleLogout = async () => {
+        await authClient.signOut()
+        redirect("/");
+    }
 
     return (
         <div className="border-b border-gray-200 pt-10 pb-2">
@@ -59,7 +65,7 @@ const Navbar = () => {
                                 <>
                                     <Image src={session?.user?.image} width={30} height={30} alt={session?.user.name} className="rounded-full"></Image>
                                     <button
-                                        onClick={async () => await authClient.signOut()}
+                                        onClick={handleLogout}
                                         className="pl-2 btn btn-sm btn-error text-white">Logout</button>
                                 </> :
                                 <>
