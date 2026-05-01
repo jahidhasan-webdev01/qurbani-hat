@@ -33,7 +33,8 @@ const BookNow = () => {
                             <button className="btn btn-sm text-red-500 font-bold">X</button>
                         </form>
                     </div>
-                    <form className="fieldset" onSubmit={handleSubmit(handleUpdateProfile)}>
+                    <h1 className="font-bold text-xl">Confirm you booking</h1>
+                    <form className="fieldset mt-2" onSubmit={handleSubmit(handleUpdateProfile)}>
                         <label className="label font-bold">Name</label>
                         <input
                             type="text"

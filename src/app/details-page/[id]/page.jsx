@@ -8,21 +8,28 @@ const AnimalDetails = async ({ params }) => {
     const selectedAnimal = animals.find((animal) => String(animal.id) === id)
 
     return (
-        <div className="min-h-screen container mx-auto py-10">
-            <Image src={selectedAnimal?.image} width={500} height={500} alt={selectedAnimal?.name} className="mx-auto" />
-            <div className="mt-5">
-                <h1 className="text-xl font-bold">{selectedAnimal?.name}</h1>
-                <h1>Type: {selectedAnimal?.type}</h1>
-                <h1>Price: {selectedAnimal?.price} bdt</h1>
-                <h1>Weight: {selectedAnimal?.weight} kg</h1>
-                <h1>Age: {selectedAnimal?.age} years old</h1>
-                <h1>Breed: {selectedAnimal?.breed}</h1>
-                <h1>Location: {selectedAnimal?.location}</h1>
-                <h1>Category: {selectedAnimal?.category}</h1>
-                <h1 className="mt-5">{selectedAnimal?.description}</h1>
+        <div className="container mx-auto py-10 grid md:grid-cols-2 gap-5 px-2 md:px-0">
+            <div>
+                <Image src={selectedAnimal?.image} width={500} height={500} alt={selectedAnimal?.name} className="mx-auto" />
             </div>
 
-            <BookNow />
+            <div className="flex flex-col justify-center">
+                <div className="">
+                    <h1 className="text-xl font-bold pb-5">{selectedAnimal?.name}</h1>
+                    <div className="text-gray-600">
+                        <h1>Type: {selectedAnimal?.type}</h1>
+                        <h1>Price: {selectedAnimal?.price} bdt</h1>
+                        <h1>Weight: {selectedAnimal?.weight} kg</h1>
+                        <h1>Age: {selectedAnimal?.age} years old</h1>
+                        <h1>Breed: {selectedAnimal?.breed}</h1>
+                        <h1>Location: {selectedAnimal?.location}</h1>
+                        <h1>Category: {selectedAnimal?.category}</h1>
+                    </div>
+                    <h1 className="mt-5">{selectedAnimal?.description}</h1>
+                </div>
+
+                <BookNow />
+            </div>
         </div>
     );
 };

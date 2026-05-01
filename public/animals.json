@@ -87,20 +87,20 @@
         "age": 4,
         "location": "Khulna",
         "description": "This Red Sindhi cow is known for its strong immunity and adaptability. Raised in a clean farm environment with proper nutrition and care, it maintains excellent health and body structure. The cow is calm, well-trained, and suitable for Qurbani. Its meat quality is expected to be tender and flavorful.",
-        "image": "https://png.pngtree.com/png-vector/20241220/ourmid/pngtree-cow-isolated-png-image_14857392.png",
+        "image": "https://img.magnific.com/premium-vector/indian-cow-clipart-vector-illustration_1123392-2471.jpg",
         "category": "Large Animal"
     },
     {
         "id": 8,
         "name": "Boer Goat",
-        "type": "Goat",
+        "type": "Goat", 
         "breed": "Boer",
         "price": 45000,
         "weight": 45,
         "age": 3,
         "location": "Chattogram",
         "description": "This Boer goat is a premium meat breed known for rapid growth and excellent meat yield. Raised with proper feeding and hygiene, it is healthy, active, and disease-free. Ideal for buyers looking for high-quality Qurbani goats.",
-        "image": "https://png.pngtree.com/png-clipart/20240615/original/pngtree-goat-png-image_15276267.png",
+        "image": "https://png.pngtree.com/png-clipart/20240713/original/pngtree-a-closeup-brown-goat-png-image_15548367.png",
         "category": "Small Animal"
     },
     {
@@ -113,7 +113,7 @@
         "age": 3,
         "location": "Rangpur",
         "description": "This Deshi bull has been raised in a natural environment with proper feeding and veterinary care. It is strong, active, and well-suited for Qurbani. The animal has a healthy body structure and good meat quality.",
-        "image": "https://png.pngtree.com/png-vector/20241229/ourmid/pngtree-bull-png-image_14938735.png",
+        "image": "https://png.pngtree.com/png-clipart/20250309/original/pngtree-holstein-cow-png-image_20610191.png",
         "category": "Large Animal"
     },
     {
@@ -126,7 +126,7 @@
         "age": 2,
         "location": "Barisal",
         "description": "This Garole sheep is a small but productive breed known for good meat quality. Raised in a rural setup with natural feeding, it is healthy and active. A great choice for small families.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5QcE8EeTqrvSlfncnmmS1mTWC3yHpdlgyiA&s",
+        "image": "https://static.vecteezy.com/system/resources/previews/054/583/714/non_2x/white-sheep-grazing-peacefully-in-a-green-field-png.png",
         "category": "Small Animal"
     },
     {
