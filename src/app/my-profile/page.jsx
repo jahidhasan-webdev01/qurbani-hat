@@ -17,7 +17,7 @@ const MyProfilePage = async () => {
                 <div className="divider"></div>
                 <div className="card-body text-center">
                     <Image src={user.image} alt={user?.name} width={100} height={100} className="mx-auto rounded-full border-2 border-purple-400"></Image>
-                    <p className="italic text-sm">
+                    <p className="italic text-xs">
                         User since {""}
                         {new Date(user?.createdAt).toLocaleDateString("en-US", {
                             weekday: "long",
@@ -26,8 +26,8 @@ const MyProfilePage = async () => {
                             day: "numeric",
                         })}
                     </p>
-                    <h1 className="text-xl font-bold">Name: {user?.name}</h1>
-                    <h1 className="text-gray-600">Email: {user?.email}</h1>
+                    <h1 className="font-bold text-lg">{user?.name}</h1>
+                    <h1 className="text-gray-600 text-sm">{user?.email}</h1>
 
                     <Link href={"/my-profile/update"} className="btn btn-neutral text-center mt-5">Update Profile</Link>
                 </div>
