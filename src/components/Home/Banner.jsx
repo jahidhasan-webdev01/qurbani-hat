@@ -22,9 +22,6 @@ const Banner = () => {
                     alt="Banner Cow"
                 ></Image>
             </div>
-            {/* <div className="mt-5">
-                
-            </div> */}
            </div>
         </div>
     );
