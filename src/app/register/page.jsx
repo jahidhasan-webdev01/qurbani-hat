@@ -86,7 +86,7 @@ const RegisterPage = () => {
                             {...register("image", {
                                 required: "Image URL is required",
                                 pattern: {
-                                    value: /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp))$/i,
+                                    value: /^(https?:\/\/)[^\s$.?#].[^\s]*$/i,
                                     message: "Enter a valid image URL"
                                 }
                             })}

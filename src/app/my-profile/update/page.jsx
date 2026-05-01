@@ -28,7 +28,7 @@ const UpdateProfilePage = () => {
     }
 
     return (
-        <div className="h-[90vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
+        <div className="h-[70vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
             <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md">
                 <h1 className="text-center font-bold text-2xl">Update your profile</h1>
                 <div className="card-body mt-5">
@@ -58,7 +58,7 @@ const UpdateProfilePage = () => {
                             {...register("image", {
                                 required: "Image URL is required",
                                 pattern: {
-                                    value: /^(https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp))$/i,
+                                    value: /^(https?:\/\/)[^\s$.?#].[^\s]*$/i,
                                     message: "Enter a valid image URL"
                                 }
                             })}

@@ -11,14 +11,14 @@ const MyProfilePage = async () => {
     const user = session?.user;
 
     return (
-        <div className="h-screen container mx-auto py-10 px-2 md:px-0">
-            <h1 className="font-bold text-2xl">My Profile</h1>
-
-            <div className="flex flex-col items-center mt-2">
-                <div className="text-center">
-                    <Image src={user.image} alt={user?.name} width={200} height={200} className="mx-auto"></Image>
+        <div className="h-[70vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
+            <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md">
+                <h1 className="text-center font-bold text-2xl">Your profile</h1>
+                <div className="divider"></div>
+                <div className="card-body text-center">
+                    <Image src={user.image} alt={user?.name} width={100} height={100} className="mx-auto rounded-full border-2 border-purple-400"></Image>
                     <p className="italic text-sm">
-                        User since{" "}
+                        User since {""}
                         {new Date(user?.createdAt).toLocaleDateString("en-US", {
                             weekday: "long",
                             year: "numeric",
@@ -26,12 +26,11 @@ const MyProfilePage = async () => {
                             day: "numeric",
                         })}
                     </p>
-                    <h1 className="mt-2 text-xl font-bold">Name: {user?.name}</h1>
+                    <h1 className="text-xl font-bold">Name: {user?.name}</h1>
                     <h1 className="text-gray-600">Email: {user?.email}</h1>
+
+                    <Link href={"/my-profile/update"} className="btn btn-neutral text-center mt-5">Update Profile</Link>
                 </div>
-
-                <Link href={"/my-profile/update"} className="btn btn-info text-white btn-sm text-center mt-5">Update Profile</Link>
-
             </div>
         </div>
     );
