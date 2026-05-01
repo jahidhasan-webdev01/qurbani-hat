@@ -8,9 +8,9 @@ const Animals = async () => {
     const topFour = animals.sort((a, b) => b.weight - a.weight).slice(0, 4)
 
     return (
-        <div className="container mx-auto py-20 px-2 lg:px-0">
+        <div className="container mx-auto py-20 px-2 lg:px-0 animate__animated animate__fadeIn">
             <div className="text-center">
-                <h1 className="font-bold text-2xl">Featured Animals</h1>
+                <h1 className="font-bold text-2xl animate__animated animate__fadeInUp">Featured Animals</h1>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
                 {

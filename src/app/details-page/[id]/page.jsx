@@ -8,7 +8,7 @@ const AnimalDetails = async ({ params }) => {
     const selectedAnimal = animals.find((animal) => String(animal.id) === id)
 
     return (
-        <div className="container mx-auto py-10 grid md:grid-cols-2 gap-5 px-2 md:px-0">
+        <div className="container mx-auto py-10 grid md:grid-cols-2 gap-5 px-2 md:px-0 animate__animated animate__fadeIn">
             <div>
                 <Image src={selectedAnimal?.image} width={500} height={500} alt={selectedAnimal?.name} className="mx-auto" />
             </div>

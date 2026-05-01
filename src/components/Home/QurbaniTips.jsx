@@ -96,8 +96,8 @@ const QurbaniTips = () => {
     const activeTips = qurbaniTips.find((tip) => tip.id === selectedTips);
 
     return (
-        <div className="container mx-auto py-10 lg:py-20 flex flex-col items-center px-5 lg:px-0">
-            <h1 className="font-bold text-2xl">Qurbani Tips</h1>
+        <div className="container mx-auto py-10 lg:py-20 flex flex-col items-center px-5 lg:px-0 animate__animated animate__fadeIn">
+            <h1 className="font-bold text-2xl animate__animated animate__fadeInUp">Qurbani Tips</h1>
             <div className="mt-5 flex flex-row gap-2 lg:gap-5 flex-wrap">
                 {
                     qurbaniTips.map((tips, index) => <button onClick={() => setSelectedTips(tips.id)} key={index} className={`btn btn-sm  ${selectedTips === tips.id

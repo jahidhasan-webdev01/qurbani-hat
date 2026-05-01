@@ -29,7 +29,7 @@ const UpdateProfilePage = () => {
 
     return (
         <div className="h-[70vh] flex justify-center items-center py-5 bg-gray-100 px-5 md:px-0">
-            <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md">
+            <div className="w-lg bg-white border border-gray-100 px-2 md:px-5 py-10 rounded-md animate__animated animate__fadeIn">
                 <h1 className="text-center font-bold text-2xl">Update your profile</h1>
                 <div className="card-body mt-5">
                     <form className="fieldset" onSubmit={handleSubmit(handleUpdateProfile)}>
