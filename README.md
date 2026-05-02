@@ -5,7 +5,7 @@ QurbaniHat is a modern web application built with Next.js that allows users to b
 ---
 
 ## 🌐 Live URL
-https://your-live-site-url.com
+https://qurbani-hat-nu.vercel.app
 
 ---
 

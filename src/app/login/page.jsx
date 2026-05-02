@@ -34,6 +34,8 @@ const LoginPage = () => {
             provider: "google",
         });
 
+        console.log("GOOGLE RESPONSE: ", data);
+
         if (data) {
             toast.success("Login successfull.")
             redirect("/")
