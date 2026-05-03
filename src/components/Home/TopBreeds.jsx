@@ -75,7 +75,7 @@ const TopBreeds = () => {
     ];
 
     return (
-        <div className="container mx-auto py-20 px-5 lg:px-0 animate__animated animate__fadeIn">
+        <div className="container mx-auto py-20 px-2 lg:px-0 animate__animated animate__fadeIn">
             <div className="text-center">
                 <h1 className="font-bold text-2xl animate__animated animate__fadeInUp">Top Breeds</h1>
             </div>
