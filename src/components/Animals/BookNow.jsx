@@ -143,7 +143,7 @@ const BookNow = () => {
             </dialog>
 
             <div className="mt-5">
-                <button onClick={openModal} className="btn btn-info text-white btn-sm">
+                <button onClick={openModal} className="btn btn-neutral text-white btn-sm">
                     Book Now
                 </button>
             </div>

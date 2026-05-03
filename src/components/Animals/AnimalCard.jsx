@@ -4,7 +4,7 @@ import Link from "next/link";
 const AnimalCard = ({ animal }) => {
     return (
         <div className="grid lg:grid-cols-2 border border-purple-400 rounded-md">
-            <div className="bg-gray-50 xl:p-10">
+            <div className="bg-purple-50 xl:p-10">
                 <Image
                     src={animal.image}
                     width={300}
