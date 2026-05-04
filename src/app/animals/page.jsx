@@ -1,6 +1,8 @@
 import AnimalList from "@/components/Animals/AnimalList";
 import { getAnimals } from "@/lib/fetchData";
 
+export const dynamic = 'force-dynamic'
+
 const AnimalsPage = async () => {
     const animals = await getAnimals();
 
