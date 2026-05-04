@@ -25,7 +25,6 @@ const RegisterPage = () => {
 
         if (response) {
             toast.success("User created successfully.")
-            await authClient.signOut()
             redirect("/login")
         }
     }
